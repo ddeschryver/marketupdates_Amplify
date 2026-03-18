@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Amplify Education — Market Insights | March 18, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy:     #0d1b2e;
+    --navy-mid: #142438;
+    --navy-lt:  #1e3352;
+    --amber:    #e8a020;
+    --amber-lt: #f5c45e;
+    --teal:     #22a89a;
+    --teal-lt:  #3ecabb;
+    --cream:    #f7f4ee;
+    --warm-gray:#e8e3da;
+    --text:     #1a1a2e;
+    --muted:    #6b7a8d;
+    --rule:     #ddd8cf;
+    --hot-bg:   #fff7e6;
+    --hot-border:#e8a020;
+    --score3:   #d63f1a;
+    --score2:   #2a7abf;
+    --score1:   #5a8a5a;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  /* ─── MASTHEAD ──────────────────────────────────────────────── */
+  .masthead {
+    background: var(--navy);
+    color: white;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .masthead::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 80% 50%, rgba(34,168,154,.18) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 10% 80%, rgba(232,160,32,.12) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .masthead-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 56px 40px 48px;
+    position: relative;
+  }
+  .masthead-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .masthead-eyebrow .logo-pill {
+    background: var(--amber);
+    color: var(--navy);
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 3px;
+  }
+  .masthead-eyebrow .date-tag {
+    font-size: 12px;
+    color: rgba(255,255,255,.5);
+    font-family: 'DM Mono', monospace;
+    letter-spacing: .06em;
+  }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4.5vw, 44px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    margin-bottom: 12px;
+    color: white;
+  }
+  .masthead h1 span {
+    color: var(--amber-lt);
+  }
+  .masthead-sub {
+    font-size: 14px;
+    color: rgba(255,255,255,.6);
+    font-weight: 300;
+    letter-spacing: .02em;
+  }
+  .masthead-divider {
+    height: 3px;
+    background: linear-gradient(90deg, var(--amber) 0%, var(--teal) 50%, transparent 100%);
+  }
+
+  /* ─── INTRO BANNER ──────────────────────────────────────────── */
+  .intro-banner {
+    background: var(--navy-mid);
+    color: white;
+    padding: 28px 40px;
+    border-left: 4px solid var(--teal);
+  }
+  .intro-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .intro-icon {
+    font-size: 22px;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+  .intro-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255,255,255,.82);
+  }
+  .intro-text a {
+    color: var(--teal-lt);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .intro-text strong {
+    color: white;
+    font-weight: 600;
+  }
+
+  /* ─── METADATA BAR ──────────────────────────────────────────── */
+  .meta-bar {
+    background: var(--warm-gray);
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 40px;
+  }
+  .meta-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .meta-chip {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .06em;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .meta-chip strong { color: var(--text); }
+
+  /* ─── LAYOUT ────────────────────────────────────────────────── */
+  .body-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 40px 72px;
+  }
+
+  /* ─── TABLE OF CONTENTS ─────────────────────────────────────── */
+  .toc {
+    background: white;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-bottom: 48px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.04);
+  }
+  .toc-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 10px;
+  }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 4px 16px;
+  }
+  .toc-grid a {
+    font-size: 13px;
+    color: var(--navy);
+    text-decoration: none;
+    padding: 4px 0;
+    border-bottom: 1px solid transparent;
+    transition: color .15s, border-color .15s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .toc-grid a:hover { color: var(--teal); border-color: var(--teal); }
+  .toc-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    background: var(--warm-gray);
+    color: var(--muted);
+    border-radius: 10px;
+    padding: 1px 6px;
+  }
+  .toc-count.hot { background: var(--hot-bg); color: var(--amber); }
+
+  /* ─── STATE SECTION ─────────────────────────────────────────── */
+  .state-section {
+    margin-bottom: 52px;
+  }
+  .state-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--navy);
+  }
+  .state-flag {
+    font-size: 10px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    background: var(--navy);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  .state-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    color: var(--navy);
+  }
+  .state-count {
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* ─── ENTRY CARD ────────────────────────────────────────────── */
+  .entry {
+    background: white;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition: box-shadow .2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+  }
+  .entry:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+
+  .entry.hot {
+    border-color: var(--hot-border);
+    border-left: 4px solid var(--hot-border);
+  }
+
+  .entry-header {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    flex-wrap: wrap;
+    padding: 14px 18px 12px;
+    border-bottom: 1px solid var(--rule);
+    background: var(--cream);
+  }
+  .entry.hot .entry-header { background: var(--hot-bg); border-color: #f0ddb4; }
+
+  .entry-meta-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    flex: 1;
+  }
+  .pill {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .07em;
+    padding: 3px 8px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .pill-state  { background: var(--navy); color: white; }
+  .pill-level  { background: var(--navy-lt); color: rgba(255,255,255,.85); }
+  .pill-issue  { background: var(--warm-gray); color: var(--text); border: 1px solid var(--rule); }
+  .pill-date   { background: transparent; color: var(--muted); border: 1px solid var(--rule); }
+  .pill-district { font-size: 10px; color: var(--muted); font-family: 'DM Mono', monospace; font-style: normal; align-self: center; }
+
+  .score-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    padding-left: 14px;
+    flex-shrink: 0;
+  }
+  .score-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+  .score-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .score-dot {
+    font-weight: 700;
+    font-size: 13px;
+    font-family: 'DM Mono', monospace;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .score-dot.s3 { background: #fff0ec; color: var(--score3); border: 2px solid var(--score3); }
+  .score-dot.s2 { background: #e8f2fb; color: var(--score2); border: 2px solid var(--score2); }
+  .score-dot.s1 { background: #edf5ed; color: var(--score1); border: 2px solid var(--score1); }
+  .score-dot.bg3 { background: #fff0ec; color: var(--score3); border: 2px solid var(--score3); }
+
+  .entry-body { padding: 16px 18px 14px; }
+
+  .hot-insight {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #fffbf0 0%, #fff7e0 100%);
+    border: 1px solid #f0ddb4;
+    border-radius: 5px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-style: italic;
+    color: #7a4f00;
+    line-height: 1.5;
+  }
+  .hot-insight .insight-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+
+  .why-matters {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--teal);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .entry-summary {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #2c3545;
+  }
+
+  .entry-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule);
+  }
+  .entry-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--navy);
+    text-decoration: none;
+    background: var(--warm-gray);
+    padding: 5px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--rule);
+    transition: background .15s, color .15s;
+  }
+  .entry-link:hover { background: var(--navy); color: white; }
+  .entry-link.video { background: #e8f2fb; border-color: #b8d4f0; color: var(--score2); }
+  .entry-link.video:hover { background: var(--score2); color: white; }
+  .entry.soundbyte {
+    border-color: var(--teal);
+    border-left: 4px solid var(--teal);
+  }
+  .entry.soundbyte .entry-header {
+    background: #edfaf8;
+    border-color: #b2e8e3;
+  }
+  .soundbyte-banner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #edfaf8 0%, #d8f4f0 100%);
+    border: 1px solid #a8dfd9;
+    border-radius: 5px;
+    padding: 9px 14px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #126b62;
+  }
+  .soundbyte-banner .sb-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background: var(--teal);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  .entry-link.soundbyte-link {
+    background: #edfaf8;
+    border-color: #a8dfd9;
+    color: #126b62;
+    font-weight: 600;
+  }
+  .entry-link.soundbyte-link:hover { background: var(--teal); color: white; }
+
+
+  /* ─── FOOTER ────────────────────────────────────────────────── */
+  .report-footer {
+    background: var(--navy);
+    color: rgba(255,255,255,.5);
+    text-align: center;
+    padding: 28px 40px;
+    font-size: 12px;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: .04em;
+    line-height: 2;
+  }
+  .report-footer a { color: var(--teal-lt); text-decoration: none; }
+  .report-footer a:hover { text-decoration: underline; }
+
+  /* ─── PRINT ─────────────────────────────────────────────────── */
+  @media print {
+    .masthead::before { display: none; }
+    .entry { break-inside: avoid; }
+    .state-section { break-inside: avoid; }
+  }
+
+  @media (max-width: 600px) {
+    .masthead-inner, .body-wrap, .meta-bar, .intro-banner { padding-left: 20px; padding-right: 20px; }
+    .entry-header { flex-direction: column; gap: 10px; }
+    .score-badge { margin-left: 0; padding-left: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-eyebrow">
+      <span class="logo-pill">Whiteboard Advisors</span>
+      <span class="date-tag">March 18, 2026</span>
+    </div>
+    <h1>Market Insights<br><span>for Amplify Education</span></h1>
+    <p class="masthead-sub">K–12 Policy &amp; Procurement Intelligence · Two-Week Review</p>
+  </div>
+  <div class="masthead-divider"></div>
+</header>
+
+<!-- INTRO BANNER -->
+<div class="intro-banner">
+  <div class="intro-inner">
+    <div class="intro-icon">📊</div>
+    <div class="intro-text">
+      The items below represent only a <strong>curated selection</strong> of the intelligence available through the Whiteboard Advisors platform. For the full picture — including all states, issues, and trend visualizations — please visit the
+      <a href="https://prod-useast-a.online.tableau.com/t/whiteboardinsights/views/TheEducationTrendReport/TheTrendReport" target="_blank">Education Trend Report dashboard</a>.
+      We look forward to connecting with the Amplify team in the coming days to discuss what we're seeing and how it maps to your priorities.
+    </div>
+  </div>
+</div>
+
+<!-- META BAR -->
+<div class="meta-bar">
+  <div class="meta-inner">
+    <span class="meta-chip">📅 <strong>Period:</strong> March 4–18, 2026</span>
+    <span class="meta-chip">📌 <strong>Filter:</strong> Bad-Good = 3</span>
+    <span class="meta-chip">🗺 <strong>States:</strong> 27</span>
+    <span class="meta-chip">📋 <strong>Entries:</strong> 52</span>
+    <span class="meta-chip">🔺 <strong>Action Score 3:</strong> 21 entries</span>
+    <span class="meta-chip">🎙 <strong>SoundByte:</strong> 3 entries</span>
+  </div>
+</div>
+
+<div class="body-wrap">
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc">
+  <div class="toc-title">Contents — States &amp; Territories</div>
+  <div class="toc-grid">
+    <a href="#national">National (US) <span class="toc-count hot">2 🔺</span></a>
+    <a href="#alabama">Alabama <span class="toc-count">1</span></a>
+    <a href="#arizona">Arizona <span class="toc-count">1</span></a>
+    <a href="#arkansas">Arkansas <span class="toc-count">1</span></a>
+    <a href="#california">California <span class="toc-count">3</span></a>
+    <a href="#colorado">Colorado <span class="toc-count">1</span></a>
+    <a href="#florida">Florida <span class="toc-count">1</span></a>
+    <a href="#georgia">Georgia <span class="toc-count hot">1 🔺</span></a>
+    <a href="#illinois">Illinois <span class="toc-count hot">1 🔺</span></a>
+    <a href="#iowa">Iowa <span class="toc-count hot">1 🔺</span></a>
+    <a href="#kansas">Kansas <span class="toc-count">1</span></a>
+    <a href="#louisiana">Louisiana <span class="toc-count">1</span></a>
+    <a href="#maine">Maine <span class="toc-count">1</span></a>
+    <a href="#michigan">Michigan <span class="toc-count hot">3 🔺</span></a>
+    <a href="#newhampshire">New Hampshire <span class="toc-count hot">1 🔺</span></a>
+    <a href="#newjersey">New Jersey <span class="toc-count hot">1 🔺</span></a>
+    <a href="#newmexico">New Mexico <span class="toc-count hot">8 🔺</span></a>
+    <a href="#newyork">New York <span class="toc-count">5</span></a>
+    <a href="#northcarolina">North Carolina <span class="toc-count hot">1 🔺</span></a>
+    <a href="#oklahoma">Oklahoma <span class="toc-count">3</span></a>
+    <a href="#oregon">Oregon <span class="toc-count hot">1 🔺</span></a>
+    <a href="#southdakota">South Dakota <span class="toc-count">3</span></a>
+    <a href="#tennessee">Tennessee <span class="toc-count">1</span></a>
+    <a href="#texas">Texas <span class="toc-count hot">2 🔺</span></a>
+    <a href="#vermont">Vermont <span class="toc-count">1</span></a>
+    <a href="#westvirginia">West Virginia <span class="toc-count">1</span></a>
+    <a href="#wisconsin">Wisconsin <span class="toc-count">1</span></a>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     NATIONAL
+══════════════════════════════════════════ -->
+<section class="state-section" id="national">
+  <div class="state-header">
+    <span class="state-flag">US</span>
+    <span class="state-name">National</span>
+    <span class="state-count">2 entries</span>
+  </div>
+
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">National</span>
+        <span class="pill pill-issue">SPED</span>
+        <span class="pill pill-date">Mar 17, 2026</span>
+        <span class="pill-district">US - National</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item">
+          <span class="score-label">Action</span>
+          <span class="score-dot s3">3</span>
+        </div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> Growing gubernatorial focus on SPED funding signals expanded budgets for specialized curriculum — a timely opportunity to elevate Amplify's intervention offerings.</div>
+      <p class="entry-summary">Several governors are spotlighting special education in their annual addresses as states face budget pressure, rising disability enrollment, and a greater state-level role in K–12 oversight. The report highlights new funding proposals and legislative initiatives aimed at strengthening special education services nationwide.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.k12dive.com/news/governors-promote-special-education-initiatives-in-annual-addresses/814240/" target="_blank">↗ K12 Dive</a></div>
+    </div>
+  </div>
+
+  <div class="entry soundbyte hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">Federal</span>
+        <span class="pill pill-issue">LGBTQ+</span>
+        <span class="pill pill-date">Mar 4, 2026</span>
+        <span class="pill-district">US - Federal Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="soundbyte-banner"><span class="sb-label">🎙 SoundByte</span> Hot Take: Quick video overview here —</div>
+      <p class="entry-summary">The U.S. Supreme Court temporarily blocked California policies that generally prevent schools from disclosing a student's transgender status to parents without the student's consent. The majority found that parents challenging the policy are likely to succeed on religious-rights claims and that parents have a role in decisions affecting their children's well-being. The ruling pauses the policies while lower courts continue litigation.</p>
+      <div class="entry-links">
+        <a class="entry-link soundbyte-link" href="https://fast.wistia.net/embed/iframe/crqn727bwa" target="_blank">🎙 Watch SoundByte</a>
+        <a class="entry-link" href="https://www.nytimes.com/2026/03/02/us/politics/supreme-court-california-trans-students.html" target="_blank">↗ NYT</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ALABAMA -->
+<section class="state-section" id="alabama">
+  <div class="state-header">
+    <span class="state-flag">AL</span>
+    <span class="state-name">Alabama</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">ECE</span>
+        <span class="pill pill-date">Mar 4, 2026</span>
+        <span class="pill-district">Alabama - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s1">1</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Alabama is drawing national attention for its approach to recruiting, training, and supporting preschool assistant teachers while maintaining high-quality classroom environments — an area where many states continue to struggle. A national report highlights Alabama's model as replicable best practice.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.al.com/educationlab/2026/03/alabama-is-doing-something-right-with-preschool-that-most-states-arent.html" target="_blank">↗ AL.com</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ARIZONA -->
+<section class="state-section" id="arizona">
+  <div class="state-header">
+    <span class="state-flag">AZ</span>
+    <span class="state-name">Arizona</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">Absenteeism</span>
+        <span class="pill pill-date">Mar 17, 2026</span>
+        <span class="pill-district">AZ, HUMBOLDT UNIFIED DISTRICT (4469)</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="why-matters">✦ Good news on the absenteeism front!</div>
+      <p class="entry-summary">Humboldt Unified reported significant improvement in attendance, with chronic absenteeism dropping from 38% to 26%. District leaders credited proactive outreach and improved communication strategies with families, noting a systemwide culture shift in how principals engage parents to prevent chronic absenteeism.</p>
+      <div class="entry-links"><a class="entry-link" href="https://youtu.be/dmJgHA4WLtw" target="_blank">↗ Source Video</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ARKANSAS -->
+<section class="state-section" id="arkansas">
+  <div class="state-header">
+    <span class="state-flag">AR</span>
+    <span class="state-name">Arkansas</span>
+    <span class="state-count">1 entry</span>
+  </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Siloam Springs School Board approved a new 2026–27 salary schedule allocating approximately $950,000 in raises aimed at retaining teachers and support staff. Beginning teacher base pay will increase by $1,000.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.5newsonline.com/article/news/local/siloam-springs-school-district-increasing-pay-retain-staff/527-6759e6d8-c041-407f-aa2d-0831ac8eff14" target="_blank">↗ 5 News Online</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">Reading</span>
+        <span class="pill pill-date">Mar 11, 2026</span>
+        <span class="pill-district">AR, SHERIDAN SCHOOL DISTRICT</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s1">1</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Sheridan County School District 3 revised its library strategy after determining that a rotating collection from the county public library system was unworkable. The district is implementing a new approach to ensure students have consistent access to reading materials.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.thesheridanpress.com/news/local/scsd3-shifts-its-plans-with-school-library/article_7a75fd06-c284-4e77-a459-c446d43e002e.html" target="_blank">↗ Sheridan Press</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- CALIFORNIA -->
+<section class="state-section" id="california">
+  <div class="state-header">
+    <span class="state-flag">CA</span>
+    <span class="state-name">California</span>
+    <span class="state-count">3 entries</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Accountability</span>
+        <span class="pill pill-date">Mar 16, 2026</span>
+        <span class="pill-district">California - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">California recognized 59 schools as 2026 Model Continuation High Schools, honoring programs that support students at risk of not graduating through flexible scheduling, counseling, and individualized instruction — reflecting the state's emphasis on alternative pathways to graduation.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.cde.ca.gov/nr/ne/yr26/yr26rel15.asp" target="_blank">↗ CA Dept. of Ed</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Funding</span>
+        <span class="pill pill-date">Mar 9, 2026</span>
+        <span class="pill-district">California - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">California policymakers are debating whether to establish permanent state funding for the community schools initiative, a multibillion-dollar effort integrating mental health care, food access, and family support services into school environments.</p>
+      <div class="entry-links"><a class="entry-link" href="https://edsource.org/2026/california-community-schools-funding/752932" target="_blank">↗ EdSource</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Achievement</span>
+        <span class="pill pill-date">Mar 10, 2026</span>
+        <span class="pill-district">California - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s1">1</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">State Superintendent Tony Thurmond announced 408 middle and high schools selected as 2026 California Distinguished Schools, recognizing campuses with strong student outcomes and effective instructional programs.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.cde.ca.gov/nr/ne/yr26/yr26rel12.asp" target="_blank">↗ CA Dept. of Ed</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- COLORADO -->
+<section class="state-section" id="colorado">
+  <div class="state-header">
+    <span class="state-flag">CO</span>
+    <span class="state-name">Colorado</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">SPED</span>
+        <span class="pill pill-date">Mar 16, 2026</span>
+        <span class="pill-district">Colorado - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Colorado lawmakers are advancing Senate Bill 125, which would strengthen protections for students with disabilities by codifying civil rights protections in state law and expanding support for special education services — part of a broader package of education legislation this session.</p>
+      <div class="entry-links"><a class="entry-link" href="https://coloradosun.com/2026/03/16/colorado-education-bills-2026-legislative-session/" target="_blank">↗ Colorado Sun</a></div>
+    </div>
+  </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Colorado lawmakers are considering Senate Bill 139, the Building Excellent Teacher and Employee Residences (BETER) Act, which would create a grant program to help school districts build or acquire affordable housing for teachers and staff — addressing a key barrier to recruitment in high-cost areas.</p>
+      <div class="entry-links"><a class="entry-link" href="https://coloradosun.com/2026/03/16/colorado-education-bills-2026-legislative-session/" target="_blank">↗ Colorado Sun</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLORIDA -->
+<section class="state-section" id="florida">
+  <div class="state-header">
+    <span class="state-flag">FL</span>
+    <span class="state-name">Florida</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">Assessment</span>
+        <span class="pill pill-date">Mar 16, 2026</span>
+        <span class="pill-district">FL, BROWARD</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s1">1</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Broward County Public Schools reported a 5% increase in midyear Florida Assessment of Student Thinking (FAST) scores across grade levels in reading, math, and writing. District leaders credited a three-year improvement trend, with additional details on strategies supporting continued gains.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.nbcmiami.com/news/local/broward-public-schools-test-scores-on-upward-trend/3778758/" target="_blank">↗ NBC Miami</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- GEORGIA -->
+<section class="state-section" id="georgia">
+  <div class="state-header">
+    <span class="state-flag">GA</span>
+    <span class="state-name">Georgia</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Reading</span>
+        <span class="pill pill-date">Mar 16, 2026</span>
+        <span class="pill-district">Georgia - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> Georgia's $61M literacy coach investment directly aligns with Amplify's structured literacy curriculum and coaching support offerings — a timely engagement opportunity.</div>
+      <p class="entry-summary">The Georgia House approved a $38.5 billion state budget through House Bill 974 that includes $60.8 million for literacy initiatives aimed at improving early reading outcomes. The funding supports House Bill 1193, which would place literacy coaches in schools across the state.</p>
+      <div class="entry-links"><a class="entry-link" href="https://georgiarecorder.com/briefs/georgia-house-passes-budget-with-nearly-61-million-for-literacy-coaches/" target="_blank">↗ Georgia Recorder</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ILLINOIS -->
+<section class="state-section" id="illinois">
+  <div class="state-header">
+    <span class="state-flag">IL</span>
+    <span class="state-name">Illinois</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Childcare</span>
+        <span class="pill pill-date">Mar 12, 2026</span>
+        <span class="pill-district">Illinois - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> Federal childcare expansion in Illinois creates early literacy entry points well-aligned with Amplify's early learning and pre-K curriculum portfolio.</div>
+      <p class="entry-summary">SAL Family and Community Services will receive $4.3 million in federal funding to support early Head Start programs serving families in three Illinois counties, expanding access to early childhood education in the Quad Cities region.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.wqad.com/video/news/local/43m-in-federal-funding-announced-to-expand-early-head-start-child-care-programs-in-quad-cities/526-258d9a38-813d-4be9-8174-2e6e4f5a0621" target="_blank">↗ WQAD</a></div>
+    </div>
+  </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">State Senator Mike Halpin's bill would allow retired Illinois teachers to work more hours as substitutes. The measure comes as 87% of surveyed Illinois districts report teacher shortages and 91% struggle to fill substitute positions.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.wqad.com/article/news/local/the-current/halpin-senate-bill-illinois-substitute-teachers-shortages-retired-return/526-c90245ec-d59b-4f79-a692-f8265df8b643" target="_blank">↗ WQAD</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- IOWA -->
+<section class="state-section" id="iowa">
+  <div class="state-header">
+    <span class="state-flag">IA</span>
+    <span class="state-name">Iowa</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Childcare</span>
+        <span class="pill pill-date">Mar 11, 2026</span>
+        <span class="pill-district">Iowa - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> Iowa's $5M preschool and childcare expansion grants signal a growing early learning market — a strong entry point for Amplify's foundational literacy programs.</div>
+      <p class="entry-summary">Governor Kim Reynolds announced more than $5 million in Continuum of Care grants to expand partnerships between child care providers and preschool programs across the state, supporting 19 initiatives aimed at expanding access to high-quality early learning.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.weareiowa.com/article/news/state/iowa-education-governor-kim-reynolds-child-care-preschool-continuum-of-care-grant-program-5-million/524-592cf453-1c9c-4ffc-bca2-cdd232c648b5" target="_blank">↗ We Are Iowa</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- KANSAS -->
+<section class="state-section" id="kansas">
+  <div class="state-header">
+    <span class="state-flag">KS</span>
+    <span class="state-name">Kansas</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Childcare</span>
+        <span class="pill pill-date">Mar 12, 2026</span>
+        <span class="pill-district">Kansas - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">The Kansas Department of Agriculture, in partnership with the Kansas Foundation for Agriculture in the Classroom, is accepting applications from licensed early child care providers to participate in a Farm to Early Childhood Education program, expanding access to agricultural education resources in early learning settings.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.krsl.com/local/farm-early-childhood-education-opportunity-kansas-licensed-early-child-care-providers" target="_blank">↗ KRSL</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOUISIANA -->
+<section class="state-section" id="louisiana">
+  <div class="state-header">
+    <span class="state-flag">LA</span>
+    <span class="state-name">Louisiana</span>
+    <span class="state-count">1 entry entries</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">CTE</span>
+        <span class="pill pill-date">Mar 11, 2026</span>
+        <span class="pill-district">Louisiana - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Louisiana lawmakers introduced House Bill 482 and House Bill 325 to broaden eligibility for the TOPS-Tech scholarship and expand access to vocational and technical education funding. The proposals would add an early-college-credit pathway and expand options for students pursuing career and technical education.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.thecentersquare.com/louisiana/article_39368db7-94ba-4db6-a9f0-d811a08c28d9.amp.html" target="_blank">↗ The Center Square</a></div>
+    </div>
+  </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Governor Jeff Landry proposed a constitutional amendment to provide permanent salary increases of $2,250 for teachers and $1,125 for support staff by paying down debt in the Teachers' Retirement System of Louisiana.</p>
+      <div class="entry-links"><a class="entry-link" href="https://cw39.com/news/education/gov-landry-proposes-amendment-to-create-permanent-pay-raise-for-teachers/" target="_blank">↗ CW39</a></div>
+    </div>
+  </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">A Jefferson Parish School Board member proposed requiring the superintendent to develop a plan to increase teacher and staff salaries by 5–10%, citing concerns about low pay and retention in a district already grappling with compensation competitiveness.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.wwltv.com/article/news/local/jefferson-parish-school-board-member-proposes-plan-to-raise-teacher-pay/289-12cf0c47-5455-4d36-abd4-aeccc1cd2f14" target="_blank">↗ WWL TV</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- MAINE -->
+<section class="state-section" id="maine">
+  <div class="state-header">
+    <span class="state-flag">ME</span>
+    <span class="state-name">Maine</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Childcare</span>
+        <span class="pill pill-date">Mar 5, 2026</span>
+        <span class="pill-district">Maine - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Maine lawmakers passed LD 1955, a labor-backed bill introduced by Senate President Mattie Daughtry that would allocate $15 million for the Child Care Affordability Program, covering a portion of childcare costs for working parents and expanding access to subsidized care.</p>
+      <div class="entry-links"><a class="entry-link" href="https://mainemorningstar.com/2026/03/05/maine-lawmakers-pass-labor-backed-bill-to-increase-child-care-support-for-working-parents/" target="_blank">↗ Maine Morning Star</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- MICHIGAN -->
+<section class="state-section" id="michigan">
+  <div class="state-header">
+    <span class="state-flag">MI</span>
+    <span class="state-name">Michigan</span>
+    <span class="state-count">3 entries</span>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Reading</span>
+        <span class="pill pill-date">Mar 16, 2026</span>
+        <span class="pill-district">Michigan - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> Michigan's proposed $625M "Every Child Reads" investment is one of the most significant literacy procurement signals in the country — a critical engagement opportunity for Amplify.</div>
+      <p class="entry-summary">Michigan education leaders promoted the "Every Child Reads" literacy strategy and Governor Whitmer's proposed $625 million literacy investment during events at Waterford School District. State education officials are highlighting the initiative's alignment with evidence-based reading instruction across Michigan's K–12 system.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.michigan.gov/mde/news-and-information/press-releases/2026/03/13/state-education-leaders-highlight-every-child-reads-investments" target="_blank">↗ Michigan MDE</a></div>
+    </div>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">STEM</span>
+        <span class="pill pill-date">Mar 16, 2026</span>
+        <span class="pill-district">Michigan - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> MiSTEM's $1.75M grant expansion creates clear pathways for Amplify Science adoption across Michigan's public education system.</div>
+      <p class="entry-summary">Michigan's MiSTEM Network launched a $1.75 million expansion of its Playbook Mini Grant program, awarding $800,000 to 17 public education agencies to expand place-, project-, and problem-based STEM learning — supported by additional state and federal funding.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.michigan.gov/leo/news/2026/03/09/mistem-launches-stem-expansion-to-advance-stem-education-statewide" target="_blank">↗ Michigan LEO</a></div>
+    </div>
+  </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> Michigan's MiEarly Apprentice program expands the pre-K workforce pipeline, increasing the number of educators who need high-quality early literacy instructional tools.</div>
+      <p class="entry-summary">Michigan launched the MiEarly Apprentice program to address teacher shortages tied to expanding free pre-K programs like the Great Start Readiness Program. The initiative pays childcare workers and paraprofessionals while they complete credentialing to address the early childhood workforce gap.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.abc12.com/news/education/new-michigan-program-aims-to-train-retain-more-early-childhood-teachers/article_068c645d-dba2-5006-ab3b-8ef59ca663f1.html" target="_blank">↗ ABC12</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Nutrition</span>
+        <span class="pill pill-date">Mar 16, 2026</span>
+        <span class="pill-district">Michigan - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">The Michigan Department of Education announced it will continue providing free summer meals for children through the Summer Food Service Program in 2026, including Meet Up and Eat Up (SUN Meals) for children 18 and under.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.michigan.gov/mde/news-and-information/press-releases/2026/03/05/mi-continue-offer-free-summer-food-2026" target="_blank">↗ Michigan MDE</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW HAMPSHIRE -->
+<section class="state-section" id="newhampshire">
+  <div class="state-header">
+    <span class="state-flag">NH</span>
+    <span class="state-name">New Hampshire</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">Budget</span>
+        <span class="pill pill-date">Mar 16, 2026</span>
+        <span class="pill-district">NH, WESTMORELAND SCHOOL DISTRICT</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+        <div class="score-item"><span class="score-label">Bad-Good</span><span class="score-dot bg3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> Local budget approval with open enrollment in NH signals district stability — a favorable environment for exploring curriculum investment conversations with Amplify.</div>
+      <p class="entry-summary">Westmoreland voters approved a $4,628,340 school district operating budget for 2026–27, a 2.9% increase from the prior year, along with a new open enrollment policy allowing up to 10 out-of-district students to attend kindergarten.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.keenesentinel.com/news/local/education/westmoreland-voters-adopt-4-6m-school-district-budget/article_f46f6019-f83f-47a9-99fa-8480517470db.html" target="_blank">↗ Keene Sentinel</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW JERSEY -->
+<section class="state-section" id="newjersey">
+  <div class="state-header">
+    <span class="state-flag">NJ</span>
+    <span class="state-name">New Jersey</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Budget</span>
+        <span class="pill pill-date">Mar 18, 2026</span>
+        <span class="pill-district">New Jersey - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+        <div class="score-item"><span class="score-label">Bad-Good</span><span class="score-dot bg3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> NJ's record $12.4B K–12 formula aid increase is a significant statewide funding signal — districts will have new resources for curriculum procurement, including Amplify products.</div>
+      <p class="entry-summary">Governor Mikie Sherrill's $60.7 billion FY2027 budget includes a major increase in K–12 education funding, raising formula aid by over $350 million to a record $12.4 billion. The proposal is designed to support school resources and ease local property tax pressures.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.njspotlightnews.org/2026/03/sherrill-budget-plan-tops-60-billion-a-record-for-nj/" target="_blank">↗ NJ Spotlight News</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW MEXICO -->
+<section class="state-section" id="newmexico">
+  <div class="state-header">
+    <span class="state-flag">NM</span>
+    <span class="state-name">New Mexico</span>
+    <span class="state-count">8 entries</span>
+  </div>
+
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Childcare</span>
+        <span class="pill pill-date">Mar 11, 2026</span>
+        <span class="pill-district">New Mexico - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> New Mexico's first-in-the-nation universal childcare law signals massive early learning system expansion — a prime moment to position Amplify's early literacy programs.</div>
+      <p class="entry-summary">Governor Lujan Grisham signed Senate Bill 241, enacting the nation's first universal child care law guaranteeing no-cost child care for families regardless of income, backed by up to $700 million annually from a state trust fund expected to sustain the program for at least five years.</p>
+      <div class="entry-links">
+        <a class="entry-link" href="https://www.governor.state.nm.us/2026/03/10/governor-lujan-grisham-signs-nations-first-universal-child-care-law-new-mexico-is-a-national-model-for-early-childhood-care-and-education/" target="_blank">↗ NM Governor's Office</a>
+        <a class="entry-link" href="https://sourcenm.com/2026/03/10/new-mexico-gov-lujan-grisham-signs-free-universal-child-care-into-law/" target="_blank">↗ Source NM</a>
+        <a class="entry-link" href="https://www.krqe.com/news/politics-government/legislature/universal-free-childcare-program-becomes-law-in-new-mexico/" target="_blank">↗ KRQE</a>
+      </div>
+    </div>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">Math</span>
+        <span class="pill pill-date">Mar 4, 2026</span>
+        <span class="pill-district">NM, LAS CRUCES PUBLIC SCHOOLS</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> Las Cruces is actively reviewing math curriculum materials right now — Amplify should engage immediately to ensure their offerings are part of the evaluation process.</div>
+      <p class="entry-summary">A math curriculum adoption is underway in Las Cruces Public Schools. Teachers have been reviewing materials at the Teaching and Learning Center and submitting rubrics, with a deadline of March 13th before spring break. Community members and board members are invited to review materials as well.</p>
+      <div class="entry-links"><a class="entry-link" href="https://lcpsnm.granicus.com/player/clip/275?view_id=1&redirect=true" target="_blank">↗ Board Meeting</a></div>
+    </div>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Math</span>
+        <span class="pill pill-date">Mar 11, 2026</span>
+        <span class="pill-district">New Mexico - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> Strengthened math teacher licensure requirements will drive professional development demand — directly relevant to Amplify's curriculum support and implementation services.</div>
+      <p class="entry-summary">Governor Lujan Grisham signed Senate Bill 29, which increases math coursework requirements for teacher licensure as part of a broader effort to strengthen math instruction in New Mexico schools.</p>
+      <div class="entry-links"><a class="entry-link" href="https://sourcenm.com/2026/03/09/new-mexico-gov-michelle-lujan-grisham-signs-literacy-special-education-bills-into-law/" target="_blank">↗ Source NM</a></div>
+    </div>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Reading</span>
+        <span class="pill pill-date">Mar 11, 2026</span>
+        <span class="pill-district">New Mexico - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> New Mexico's structured literacy mandate creates a direct statewide adoption pathway for Amplify's CKLA curriculum — districts will be seeking compliant materials immediately.</div>
+      <p class="entry-summary">Governor Lujan Grisham signed Senate Bill 37, which requires New Mexico schools to implement structured literacy practices aligned with the science of reading to improve student reading outcomes statewide.</p>
+      <div class="entry-links"><a class="entry-link" href="https://sourcenm.com/2026/03/09/new-mexico-gov-michelle-lujan-grisham-signs-literacy-special-education-bills-into-law/" target="_blank">↗ Source NM</a></div>
+    </div>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">SPED</span>
+        <span class="pill pill-date">Mar 11, 2026</span>
+        <span class="pill-district">New Mexico - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> NM's new statewide electronic IEP system signals infrastructure investment that may create entry points for Amplify's assessment and intervention tools.</div>
+      <p class="entry-summary">Senate Bill 64 permanently establishes the Office of Special Education within New Mexico's Public Education Department and creates a statewide electronic IEP system to support students with disabilities.</p>
+      <div class="entry-links"><a class="entry-link" href="https://sourcenm.com/2026/03/09/new-mexico-gov-michelle-lujan-grisham-signs-literacy-special-education-bills-into-law/" target="_blank">↗ Source NM</a></div>
+    </div>
+  </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> Covering 80% of educator health premiums improves New Mexico's teacher retention climate — strengthening the stability of Amplify's partner district workforces.</div>
+      <p class="entry-summary">House Bill 47 requires New Mexico to cover 80% of educators' health insurance premiums to help recruit and retain teachers across the state.</p>
+      <div class="entry-links"><a class="entry-link" href="https://sourcenm.com/2026/03/09/new-mexico-gov-michelle-lujan-grisham-signs-literacy-special-education-bills-into-law/" target="_blank">↗ Source NM</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Curriculum</span>
+        <span class="pill pill-date">Mar 9, 2026</span>
+        <span class="pill-district">New Mexico - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Governor Lujan Grisham signed multiple education bills into law, including measures related to literacy and special education. Officials framed the moves as a "race to the top" in alignment with Mississippi's nationally recognized literacy gains.</p>
+      <div class="entry-links"><a class="entry-link" href="https://sourcenm.com/2026/03/09/new-mexico-gov-michelle-lujan-grisham-signs-literacy-special-education-bills-into-law/" target="_blank">↗ Source NM</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Childcare</span>
+        <span class="pill pill-date">Mar 10, 2026</span>
+        <span class="pill-district">New Mexico - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">An $11 billion state trust fund will keep New Mexico's universal child care program funded for approximately five years, making New Mexico the first state in the nation to guarantee no-cost child care for all families, regardless of income.</p>
+      <div class="entry-links"><a class="entry-link" href="https://sourcenm.com/2026/03/10/new-mexico-gov-lujan-grisham-signs-free-universal-child-care-into-law/" target="_blank">↗ Source NM</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">Reading</span>
+        <span class="pill pill-date">Mar 11, 2026</span>
+        <span class="pill-district">NM, ALBUQUERQUE PUBLIC SCHOOLS</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s1">1</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Third-grade reading proficiency in Albuquerque Public Schools increased to nearly 40%, up from 32% the prior year. Gains were reported across student groups, including those covered under the Yazzie-Martinez education equity lawsuit.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.koat.com/article/albuquerque-public-schools-say-3rd-grade-reading-has-improved/70703376" target="_blank">↗ KOAT</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW YORK -->
+<section class="state-section" id="newyork">
+  <div class="state-header">
+    <span class="state-flag">NY</span>
+    <span class="state-name">New York</span>
+    <span class="state-count">5 entries</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">Childcare</span>
+        <span class="pill pill-date">Mar 10, 2026</span>
+        <span class="pill-district">NY, NEW YORK CITY SCHOOLS (ALL)</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Mayor Mamdani announced a major expansion of 3-K (free preschool for 3-year-olds) across all five boroughs, adding more than 1,000 new seats in 56 ZIP codes — moving New York City closer to making 3-K universal. The announcement was made on Staten Island, a borough that had felt underserved in earlier seat distributions.</p>
+      <div class="entry-links">
+        <a class="entry-link" href="https://www.nyc.gov/mayors-office/news/2026/03/mayor-mamdani-announces-major-3-k-expansion--adding-more-than-1-" target="_blank">↗ NYC.gov</a>
+        <a class="entry-link" href="https://www.nytimes.com/2026/03/09/nyregion/mamdani-childcare-expansion-3k.html" target="_blank">↗ NYT</a>
+        <a class="entry-link" href="https://www.nbcnewyork.com/new-york-city/mamdani-announcement-staten-island-preschool-seats/6474657/" target="_blank">↗ NBC NY</a>
+        <a class="entry-link" href="https://www.fox5ny.com/video/fmc-bhjxl6oqx066idig" target="_blank">↗ Fox5</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="entry soundbyte">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">SPED</span>
+        <span class="pill pill-date">Mar 6, 2026</span>
+        <span class="pill-district">New York - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="soundbyte-banner"><span class="sb-label">🎙 SoundByte</span> Video briefing available for this item</div>
+      <p class="entry-summary">New York school budgets are at record highs while the needs of students with disabilities have never been greater, according to the New York Council of School Superintendents. In Syracuse, the school district reports 8% more special education students than a decade ago — a specialty that demands the right knowledge and the right people.</p>
+      <div class="entry-links">
+        <a class="entry-link soundbyte-link" href="https://fast.wistia.net/embed/iframe/wfi49x8rcl" target="_blank">🎙 Watch SoundByte</a>
+        <a class="entry-link" href="https://spectrumlocalnews.com/nys/central-ny/news/2026/03/05/school-budgets-swell-and-special-education-needs-surge" target="_blank">↗ Spectrum News</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- NORTH CAROLINA -->
+<section class="state-section" id="northcarolina">
+  <div class="state-header">
+    <span class="state-flag">NC</span>
+    <span class="state-name">North Carolina</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Mental Health</span>
+        <span class="pill pill-date">Mar 4, 2026</span>
+        <span class="pill-district">North Carolina - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> NC's $11M mental health investment reflects growing whole-child priorities that may influence how Amplify positions its social-emotional and student support solutions.</div>
+      <p class="entry-summary">The U.S. Department of Education awarded more than $11 million to North Carolina's Department of Public Instruction to expand school-based mental health services. The funding supports two programs that provide internships and professional development for school mental health staff.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.ednc.org/2-25-2026-dpi-receives-11-million-in-federal-funding-for-school-mental-health-services/" target="_blank">↗ EdNC</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- OKLAHOMA -->
+<section class="state-section" id="oklahoma">
+  <div class="state-header">
+    <span class="state-flag">OK</span>
+    <span class="state-name">Oklahoma</span>
+    <span class="state-count">3 entries</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">Accountability</span>
+        <span class="pill pill-date">Mar 11, 2026</span>
+        <span class="pill-district">OK, OKLAHOMA CITY</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s1">1</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Oklahoma City Public Schools students have surpassed national academic growth expectations in reading and math over the past three school years, according to NWEA data. Approximately 6,500 students — about 20% of the district — have demonstrated above-expected growth.</p>
+      <div class="entry-links"><a class="entry-link" href="https://kfor.com/news/local/national-measurement-shows-okcps-students-exceeding-learning-expectations/" target="_blank">↗ KFOR</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Health</span>
+        <span class="pill pill-date">Mar 11, 2026</span>
+        <span class="pill-district">Oklahoma - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s1">1</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">The Oklahoma House approved House Bill 3288, which would expand school physical activity requirements to include Pre-K students and require schools to provide additional physical education time. The bill now heads to the Senate.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.kswo.com/2026/03/10/state-bill-aimed-increasing-physical-education-time-students-passes-house/" target="_blank">↗ KSWO</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">Leadership</span>
+        <span class="pill pill-date">Mar 11, 2026</span>
+        <span class="pill-district">OK, GRANDVIEW</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s1">1</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">The Grandview C-4 School District selected Stephanie Amaya as its next superintendent, making her the first woman to lead the district. Amaya is currently the district's assistant superintendent for human resources.</p>
+      <div class="entry-links"><a class="entry-link" href="https://fox4kc.com/news/education/grandview-school-district-announces-its-first-female-superintendent/" target="_blank">↗ Fox4KC</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- OREGON -->
+<section class="state-section" id="oregon">
+  <div class="state-header">
+    <span class="state-flag">OR</span>
+    <span class="state-name">Oregon</span>
+    <span class="state-count">3 entries</span>
+  </div>
+  <div class="entry hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">Reading</span>
+        <span class="pill pill-date">Mar 9, 2026</span>
+        <span class="pill-district">OR, ST HELENS SD 502</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="hot-insight"><span class="insight-icon">🔺</span> St. Helens' active CLSD grant-backed literacy initiative signals an open procurement window — Amplify's reading curriculum should be part of this district conversation now.</div>
+      <p class="entry-summary">St. Helens School District presented a Comprehensive Literacy State Development (CLSD) grant plan to strengthen reading instruction from birth through high school. The plan includes aligned curriculum, professional development, and targeted interventions — with a goal that the majority of students meet grade-level reading benchmarks by 2029.</p>
+      <div class="entry-links"><a class="entry-link" href="https://youtu.be/5m0NSlkDEb8" target="_blank">↗ Board Presentation</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">HQIM</span>
+        <span class="pill pill-date">Mar 9, 2026</span>
+        <span class="pill-district">OR, ST HELENS SD 502</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">The district emphasized evidence-based literacy programs and aligned curriculum as part of the CLSD grant strategy, including dual-language early learning resources and reading intervention programs. Leaders noted that High-Quality Instructional Materials (HQIM) adoption is central to meeting grant goals.</p>
+      <div class="entry-links"><a class="entry-link" href="https://youtu.be/5m0NSlkDEb8" target="_blank">↗ Board Presentation</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Summer</span>
+        <span class="pill pill-date">Mar 4, 2026</span>
+        <span class="pill-district">Oregon - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Oregon education officials report that nearly 30,000 students attended state-funded summer learning programs in 2025, with many demonstrating literacy gains or earning credits toward graduation. The state's $35 million per year investment in summer school is producing measurable results.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.the74million.org/article/35m-per-year-investment-in-summer-school-is-paying-off-oregon-ed-officials-say/" target="_blank">↗ The 74</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOUTH DAKOTA -->
+<section class="state-section" id="southdakota">
+  <div class="state-header">
+    <span class="state-flag">SD</span>
+    <span class="state-name">South Dakota</span>
+    <span class="state-count">3 entries</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">CTE</span>
+        <span class="pill pill-date">Mar 5, 2026</span>
+        <span class="pill-district">South Dakota - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Nine school districts were selected as recipients of the 2026 Perkins Reserve Grant by the South Dakota Department of Education. The grant provides major equipment upgrades for Career and Technical Education programs across the state.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.dakotanewsnow.com/2026/03/05/doe-selects-nine-school-districts-2026-south-dakota-perkins-reserve-grant/" target="_blank">↗ Dakota News Now</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Nutrition</span>
+        <span class="pill pill-date">Mar 12, 2026</span>
+        <span class="pill-district">South Dakota - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">A bill to help South Dakota families cover reduced-price school meals is headed to Governor Larry Rhoden after clearing both chambers of the Legislature. Supporters say the measure would cover approximately 1.5 million reduced-price meals and reduce meal debt for families.</p>
+      <div class="entry-links"><a class="entry-link" href="https://mitchellnow.com/news/236632-south-dakota-school-lunch-bill-heads-to-gov-larry-rhoden-for-final-decision/" target="_blank">↗ Mitchell Now</a></div>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Nutrition</span>
+        <span class="pill pill-date">Mar 9, 2026</span>
+        <span class="pill-district">South Dakota - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">The South Dakota Senate gave legislative approval to a bill applying state funds to reduced-price school meals — the culmination of a multi-year effort to close the gap left by federal meal subsidies.</p>
+      <div class="entry-links"><a class="entry-link" href="https://southdakotasearchlight.com/2026/03/09/fate-of-state-funding-for-reduced-price-school-meals-rests-with-governor/" target="_blank">↗ SD Searchlight</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- TENNESSEE -->
+<section class="state-section" id="tennessee">
+  <div class="state-header">
+    <span class="state-flag">TN</span>
+    <span class="state-name">Tennessee</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">Childcare</span>
+        <span class="pill pill-date">Mar 8, 2026</span>
+        <span class="pill-district">TN, DAVIDSON COUNTY (Nashville)</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Mayor Freddie O'Connell joined legislative leaders to announce two pieces of legislation to make it easier for Nashville residents to find affordable childcare, including expedited permitting for new childcare facilities and streamlined licensing for operators.</p>
+      <div class="entry-links"><a class="entry-link" href="https://tntribune.com/mayor-freddie-oconnell-announces-legislation-to-make-it-easier-to-build-operate-childcare-centers/" target="_blank">↗ TN Tribune</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEXAS -->
+<section class="state-section" id="texas">
+  <div class="state-header">
+    <span class="state-flag">TX</span>
+    <span class="state-name">Texas</span>
+    <span class="state-count">2 entries</span>
+  </div>
+  <div class="entry soundbyte hot">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">District</span>
+        <span class="pill pill-issue">CTE</span>
+        <span class="pill pill-date">Mar 11, 2026</span>
+        <span class="pill-district">TX, HARLINGEN CISD</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <div class="soundbyte-banner"><span class="sb-label">🎙 SoundByte</span> Hot Take: Look into this — board will be presenting the "classroom to commerce" concept at the National School Board Association conference</div>
+      <p class="entry-summary">Community member Gloria Casas addressed the Harlingen CISD board advocating for continued expansion of CTE programs, highlighting that Governor Abbott personally designated CTE as an emergency legislative item at the State of the State address. A board member is set to present the "classroom to commerce" concept at the National School Board Association conference, connecting CTE programs to broader economic development goals for the Rio Grande Valley. Community partnership with local industry was also urged.</p>
+      <div class="entry-links">
+        <a class="entry-link soundbyte-link" href="https://fast.wistia.net/embed/iframe/j9y69rhtzx" target="_blank">🎙 Watch SoundByte</a>
+        <a class="entry-link" href="https://youtu.be/ipFfP6TnI4c" target="_blank">↗ Board Meeting</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Curriculum</span>
+        <span class="pill pill-date">Mar 16, 2026</span>
+        <span class="pill-district">Texas - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">West Texas A&amp;M University and Texas Southern University received nearly $2 million from the U.S. Department of Education through the American History and Civics National Activities grant to expand civics education ahead of the nation's semiquincentennial.</p>
+      <div class="entry-links"><a class="entry-link" href="https://www.myplainview.com/canyon/article/wt-texas-southern-wins-2-million-grant-promote-22073204.php" target="_blank">↗ MyPlainview</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- VERMONT -->
+<section class="state-section" id="vermont">
+  <div class="state-header">
+    <span class="state-flag">VT</span>
+    <span class="state-name">Vermont</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Budget</span>
+        <span class="pill pill-date">Mar 18, 2026</span>
+        <span class="pill-district">Vermont - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+        <div class="score-item"><span class="score-label">Bad-Good</span><span class="score-dot bg3">3</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Governor Scott signed Vermont's midyear budget adjustment of $111 million to address rising costs in Medicaid, public safety, and housing while preparing for potential federal funding uncertainty. Lawmakers maintained flexibility in the budget to accommodate possible future federal funding changes.</p>
+      <div class="entry-links"><a class="entry-link" href="https://vnews.com/2026/03/11/vermont-budget-federal-funding-shortfalls/" target="_blank">↗ VNews</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- WEST VIRGINIA -->
+<section class="state-section" id="westvirginia">
+  <div class="state-header">
+    <span class="state-flag">WV</span>
+    <span class="state-name">West Virginia</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Childcare</span>
+        <span class="pill pill-date">Mar 4, 2026</span>
+        <span class="pill-district">West Virginia - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">After years of consideration, the West Virginia House passed child care stabilization legislation aimed at addressing the state's shortage of child care spots. Lawmakers hope the measure will help providers remain financially viable and expand available seats for families.</p>
+      <div class="entry-links"><a class="entry-link" href="https://westvirginiawatch.com/2026/03/04/after-years-of-consideration-wv-house-passes-child-care-bills-aimed-at-stabilizing-the-industry/" target="_blank">↗ WV Watch</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- WISCONSIN -->
+<section class="state-section" id="wisconsin">
+  <div class="state-header">
+    <span class="state-flag">WI</span>
+    <span class="state-name">Wisconsin</span>
+    <span class="state-count">1 entry</span>
+  </div>
+  <div class="entry">
+    <div class="entry-header">
+      <div class="entry-meta-pills">
+        <span class="pill pill-level">State</span>
+        <span class="pill pill-issue">Graduation</span>
+        <span class="pill pill-date">Mar 16, 2026</span>
+        <span class="pill-district">Wisconsin - State Level</span>
+      </div>
+      <div class="score-badge">
+        <div class="score-item"><span class="score-label">Action</span><span class="score-dot s2">2</span></div>
+      </div>
+    </div>
+    <div class="entry-body">
+      <p class="entry-summary">Wisconsin's four-year high school graduation rate reached a record 91.1% for the 2023–24 school year — the highest since the state began tracking the metric in 2009–10 — according to data from the Department of Public Instruction.</p>
+      <div class="entry-links"><a class="entry-link" href="https://dpi.wi.gov/news/releases/2025/graduation-rates-wisconsin-underly-wisedash" target="_blank">↗ WI DPI</a></div>
+    </div>
+  </div>
+</section>
+
+</div><!-- /body-wrap -->
+
+<footer class="report-footer">
+  <div>Prepared by <strong style="color:rgba(255,255,255,.75)">Whiteboard Advisors</strong> &nbsp;·&nbsp; March 18, 2026 &nbsp;·&nbsp; Confidential — For Amplify Education</div>
+  <div style="margin-top:6px">
+    <a href="https://prod-useast-a.online.tableau.com/t/whiteboardinsights/views/TheEducationTrendReport/TheTrendReport" target="_blank">Visit the full Education Trend Report →</a>
+  </div>
+  <div style="margin-top:4px; font-size:11px">Source: WA Market Insights Tracker · Filter: Bad-Good = 3 · Period: March 4–18, 2026</div>
+</footer>
+
+</body>
+</html>
